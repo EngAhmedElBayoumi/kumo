@@ -3779,7 +3779,7 @@ ul.dahs_navbar li a.active {
 -------------------------------------------------------------*/
 /*-------------- Form Elements ----------------*/
 .form-control, select.form-control {
-    height:52px !important;
+    height:45px !important;
     padding: 10px 15px;
     border-radius: 1px;
     border-color: #e5e5e5;
@@ -3801,7 +3801,7 @@ textarea.form-control{
 	border:none;
 }
 .form-control, select.form-control {
-    height:52px !important;
+    height:45px !important;
     padding: 10px 15px;
     border-radius: 1px;
     border-color: #e5e5e5;
@@ -4749,7 +4749,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
     box-shadow: none;
     outline: none;
     border: none;
-    height:52px;
+    height:45px;
     padding: 0 20px;
 	cursor:pointer;
 }
@@ -4801,6 +4801,19 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 }
 .ContactUsSection{
     background: #f9f9f9;
+}
+
+
+.UserProfileImages{
+        display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+}
+.ProfileLinkHeader{
+    cursor: pointer;
+    padding: 0 12px;
 }
 /*--------------------------------------------------
 	Responsiveness Start
