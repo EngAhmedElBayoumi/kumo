@@ -5254,7 +5254,25 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 	.home-slider .item {
 		min-height:350px;
 		padding:2rem 0;
+        padding-top: 0;
 	}
+    .liProfillelee .ProfileLinkHeader{
+        position: relative;
+        top: 10px;
+    }
+    .liProfillelee .submenu-indicator-chevron{
+        display: none;
+    }
+    .liProfillelee .nav-dropdown {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    top: 62px;
+}
+.mobile_nav {
+    margin-top: -10px;
+}
 	.overlio {
 		margin-top: -50px;
 	}
@@ -5306,6 +5324,56 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
 	.rows-products .col-6 .product_grid h5.fs-md {
 		font-size: 14px !important;
 	}
+    .CheckOutPage .submit-page {
+    width: 100%;
+    padding: 15px;
+}
+    .paymentWrap .paymentBtnGroup .paymentMethod{
+        width: 85px;
+    }
+    .CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .nav-link{
+        padding: 0;
+    }
+    .CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem {
+    width: 20px;
+    height: 20px;
+    }
+    .CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs{
+        padding: 0 !important;
+    }
+    .SizeBoxs .col-xs-6{
+        width: 50%;
+    }
+    .CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs .SizeItem .InputNumber{
+        width: 100% !important
+    }
+    .ClipArts .col-xs-6{
+        width: 33.333% !important;
+    }
+    .CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem{
+        width: 100% !important;
+    }
+    .CustomTapsDesign .AddTextBodyTap .TextOptions .DowenSection{
+         width: 100% !important;
+    }
+    .tableTeam {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+    .tableTeam .InputAddName{
+        min-width: 150px !important;
+    }
+   .tableTeam  .form-control{
+        min-width: 50px;
+    }
+    .AllFornt_BackImages .product-tab-info{
+        margin-bottom: 30px;
+    }
+    .btn-group-vertical {
+    display: block;
+}
 }
 
 
