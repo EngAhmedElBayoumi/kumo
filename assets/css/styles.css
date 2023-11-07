@@ -5062,6 +5062,158 @@ footer.skin-dark-footer ul.footer-bottom-social li a:hover, footer.skin-dark-foo
   color: #000;
 }
 
+.proposelPage{
+    
+}
+.proposelPage .proposlTitle{
+    margin: 35px 0;
+}
+.proposelPage .proposlTitle h2{
+        text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.proposelPage .PrsentedTo{
+    margin-bottom: 35px;
+}
+
+.proposelPage .PrsentedTo .SmallTitl{
+    margin-bottom: 10px;
+}
+.proposelPage .PrsentedTo .SmallTitl h3{
+        font-size: 14px;
+    color: #888;
+}
+.proposelPage .PrsentedTo .PresentAccount{
+    display: flex;
+        align-items: center;
+}
+.proposelPage .PrsentedTo .PresentAccount .shortIcon{
+    
+}
+.proposelPage .PrsentedTo .PresentAccount .shortIcon span{
+        display: block;
+    width: 50px;
+    height: 50px;
+    background: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.proposelPage .PrsentedTo .PresentAccount .AccountInfo{
+    
+}
+.proposelPage .PrsentedTo .PresentAccount .AccountInfo h2{
+    margin: 0;
+    font-size: 18px;
+    color: #212121;
+        line-height: normal;
+}
+.proposelPage .PrsentedTo .PresentAccount .AccountInfo a {
+        font-size: 14px;
+    line-height: normal;
+}
+
+.proposelPage .ViewProposel{
+    margin: 30px 0;
+}
+.proposelPage .ViewProposel a{
+        display: block;
+    background: #3F51B5;
+    width: max-content;
+    height: 55px;
+    line-height: 55px;
+    margin: auto;
+    padding: 0 100px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.proposelPage .lastUpdated{
+    margin: 30px 0;
+}
+.proposelPage .lastUpdated p{
+            font-size: 15px;
+    color: #555;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-align: center;
+}
+.proposelPage .IKeprintInfo{
+    
+}
+.proposelPage .IKeprintInfo ul{
+        display: block;
+    width: max-content;
+    margin: auto;
+    padding: 0;
+}
+.proposelPage .IKeprintInfo ul li{
+        display: inline-block;
+    margin: 0 25px;
+}
+.proposelPage .IKeprintInfo ul li a{
+        font-size: 15px;
+    color: #555;
+}
+.proposelPage .IKeprintInfo ul li a span{
+    margin: 0 3px;
+}
+.DowenSectionData{
+    margin: 30px 0;
+        text-align: center;
+}
+.DowenSectionData h2{
+        margin: 0;
+    font-size: 20px;
+    color: #212121;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.DowenSectionData ul{
+            display: block;
+    width: max-content;
+    margin: auto;
+    padding: 0;
+}
+.DowenSectionData ul li{
+    
+}
+.DowenSectionData ul li p{
+    margin: 0;
+    line-height: normal;
+    font-size: 15px;
+}
+
+
+.proposelDetails .cart_selected_single_thumb{
+width: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.proposelDetails .DeliveryMethiod{
+    text-align: start;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.proposelDetails .successsBG{
+        background-color: #ecf9f2;
+    border: 1px solid #48C585 !important;
+}
+
+
+
+
+
 
 
 /*--------------------------------------------------
