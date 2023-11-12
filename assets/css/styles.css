@@ -5422,14 +5422,16 @@ text {
     color: #1f2e3b;
     white-space: nowrap;
     margin-bottom: 0.5rem;
-        padding: 1rem;
+    padding: 10px;
     background-color: #f4f4f4;
     border: 1px solid #dcdcdc;
     border-radius: 4px;
     background-position: center center;
     width: calc(50% - 20px);
-    text-indent: -9999px;
+    /* text-indent: -9999px; */
     cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
 }
 .FontDialog .categoryList a.category:hover {
     background-color: #fafafa;
