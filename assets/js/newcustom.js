@@ -1,39 +1,39 @@
-$(document).ready(function(){
-        $(".FontTapUpper").click(function(){
-            $(".FontsBoxxxTap").addClass("showTap");
-        });
-    
-    $(".dlg-close-btn").click(function(){
-        $(".FontsBoxxxTap").removeClass("showTap");
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.FontTapUpper').addEventListener('click', function() {
+        document.querySelector('.FontsBoxxxTap').classList.add('showTap');
     });
-    
-            $(".category").click(function(){
-            // Add the active class to the content_Font div
-            $(".content_Font").addClass("show-category");
-                $(".browse-categories").addClass("show-Item");
-                            // Get the text content of the clicked category
-            var categoryText = $(this).text();
-            
-            // Update the text content of the span inside dlg-header-title
-            $(".dlg-header-title span").text(categoryText);
-            
-        });
 
-    
-    $(".browse-categories").click(function(){
-        $(this).removeClass("show-Item");
-        $(".content_Font").removeClass("show-category");
-        $(".dlg-header-title span").text("Choose a Category Font");
-        
+    document.querySelector('.dlg-close-btn').addEventListener('click', function() {
+        document.querySelector('.FontsBoxxxTap').classList.remove('showTap');
     });
-    $(".font").click(function(){
-            // Remove the selected class from all font items
-            $(".font").removeClass("selected");
-            // Add the selected class to the clicked font item
-            $(this).addClass("selected");
-        
-        var fontName = $(this).find(".name").text();
-            // Update the text content of the FontTapUpper button
-            $(".FontTapUpper .namoffont").text(fontName);
+
+    document.querySelectorAll('.category').forEach(function(element) {
+        element.addEventListener('click', function() {
+            document.querySelector('.content_Font').classList.add('show-category');
+            document.querySelector('.browse-categories').classList.add('show-Item');
+            
+            var categoryText = this.textContent;
+            document.querySelector('.dlg-header-title span').textContent = categoryText;
         });
-});     
+    });
+
+    document.querySelector('.browse-categories').addEventListener('click', function() {
+        this.classList.remove('show-Item');
+        document.querySelector('.content_Font').classList.remove('show-category');
+        document.querySelector('.dlg-header-title span').textContent = 'Choose a Category Font';
+    });
+
+    document.querySelectorAll('.font').forEach(function(element) {
+        element.addEventListener('click', function() {
+            document.querySelectorAll('.font').forEach(function(fontElement) {
+                fontElement.classList.remove('selected');
+            });
+
+            this.classList.add('selected');
+            
+            var fontName = this.querySelector('.name').textContent;
+            document.querySelector('.FontTapUpper .namoffont').textContent = fontName;
+            changeFontFamily(fontName);
+        });
+    });
+});
