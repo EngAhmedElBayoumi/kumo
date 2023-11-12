@@ -5510,6 +5510,43 @@ text {
     display: block;
     margin: auto;
 }
+
+.tablerespsonsive{
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+.tablecarrrt{
+    margin: 0;
+
+}
+
+.tablecarrrt .cart_single {
+    width: 300px;
+}
+.tablecarrrt  .TrashItem{
+        width: 100px;
+}
+.tablecarrrt .ProductImage{
+        width: 150px !important;
+}
+.tablecarrrt  .ProductName{
+        width: 150px;
+    text-align: center;
+}
+.tablecarrrt  .ProductPrice{
+        width: 100px;
+    text-align: center
+}
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------
 	Responsiveness Start
 ---------------------------------------------------*/
