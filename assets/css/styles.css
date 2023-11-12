@@ -5236,11 +5236,280 @@ width: 125px;
 }
 
 
+.DescriptionInTap{
+    
+}
+.DescriptionInTap p{
+        font-size: 14px;
+    color: #212121;
+}
+.DescriptionInTap ul{
+    
+}
+.DescriptionInTap ul li{
+        list-style: disc;
+}
+.DescriptionInTap ul li p{
+    margin: 0;
+}
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
+}
+
+
+.FontTapUpper{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding-right: 0
+}
+.FontTapUpper .arowdowen{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 45px;
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+
+/*******************************************/
+.FontsBoxxxTap{
+    display: none;
+}
+.FontsBoxxxTap .FontDialog{
+        display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 54px;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.98);
+    border-top: 1px solid #cacaca;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    overflow: hidden;
+    border-top: none;
+}
+
+.FontsBoxxxTap .FontDialog .dlg-header{
+    align-items: center;
+    background-color: #666;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 0;
+    /* white-space: nowrap; */
+    display: flex;
+    justify-content: space-between;
+}
+.FontsBoxxxTap .FontDialog .dlg-header > div {
+
+}
+.FontsBoxxxTap .FontDialog .dlg-header a{
+        color: #fff;
+}
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-back{
+    
+}
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-back a{
+       display: inline-block;
+}
+
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-back .browse-categories{
+    display: block;
+    opacity: 0;
+    background-size: 16px 16px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-back .browse-categories i{
+    
+}
+.FontsBoxxxTap .FontDialog .dlg-header > div:first-child>a {
+    margin-right: auto;
+}
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-header-title{
+        text-align: center;
+}
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-header-title span{
+    
+}
+
+.FontsBoxxxTap .FontDialog .dlg-header .dlg-close-btn{
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    background-size: 20px 20px;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.FontDialog .content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.FontDialog .categoryList {
+  
+    overflow-x: auto;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: block;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+    transition: transform .5s cubic-bezier(0.3, 1, 0.32, 1);
+    transform: translateX(0);
+}
+.FontDialog .fontList {
+
+    padding: 0.5rem;
+    min-height: 622px;
+    height: 100%;
+    overflow-x: auto;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: transform .5s cubic-bezier(0.3, 1, 0.32, 1);
+    transform: translateX(100%);
+}
+.FontDialog.show-category .fontList {
+    transform: translateX(0);
+}
+
+.FontDialog .categoryList a.category.selected {
+    color: #009ddc;
+    font-weight: bold;
+}
+
+.FontDialog .categoryList a.category {
+    background-position: -9999px -9999px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    text-align: center;
+    color: #1f2e3b;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+        padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-position: center center;
+    width: calc(50% - 20px);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.FontDialog .categoryList a.category:hover {
+    background-color: #fafafa;
+}
 
 
 
 
+.CustomTapsDesign .AddTextTap .AddTextBodyTap{
+    position: relative;
+}
 
+
+.FontsBoxxxTap{
+    overflow: hidden;
+
+}
+.FontsBoxxxTap * {
+    transition: all .4s ease-in-out;
+}
+.FontsBoxxxTap.showTap{
+    display: block;
+}
+.FontsBoxxxTap .show-category{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.FontDialog  .show-category .categoryList{
+    transform: translateX(-100%);
+    opacity: 0;
+
+}
+.FontDialog .show-category .fontList{
+    transform: translateX(0);
+  opacity: 1;
+}
+
+.FontsBoxxxTap  .dlg-header .dlg-back .browse-categories.show-Item{
+   opacity: 1;
+}
+
+
+.FontDialog .fontList .font {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 64px;
+    overflow: hidden;
+    margin: 0.25rem 0.5rem;
+    font-size: 11px;
+    text-transform: uppercase;
+        width: calc(50% - 20px);
+    margin-top: 0.65rem;
+    margin-bottom: 0.65rem;
+    cursor: pointer;
+}
+.FontDialog .fontList .font .preview {
+    padding: 0;
+    border: none;
+    margin-bottom: 2px;
+    height: 24px;
+}
+.FontDialog .fontList .preview h2{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.FontDialog .fontList .font .name {
+    color: #000;
+    white-space: nowrap;
+        margin-top: 5px;
+}
+.FontDialog .fontList .font.selected h2{
+    color: #068b8e;
+}
+
+.close_slide.gray{
+    display: block;
+    margin: auto;
+}
 /*--------------------------------------------------
 	Responsiveness Start
 ---------------------------------------------------*/
