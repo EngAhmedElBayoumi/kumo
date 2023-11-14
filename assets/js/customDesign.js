@@ -216,7 +216,7 @@ function bringForward() {
     var activeObject = activecanvas.getActiveObject();
     console.log(activeObject);
     if (activeObject) {
-        
+         
         activecanvas.bringForward(activeObject);
     }
 }
@@ -241,6 +241,7 @@ document.addEventListener("keydown", function(e) {
         cut();
     }
 }, false);
+
 
 
 
@@ -284,20 +285,6 @@ document.addEventListener("keydown", function(e) {
     }
 }, false);
 
-// Define as node the T-Shirt Div
-var node = document.getElementById('tshirt-div');
-
-domtoimage.toPng(node).then(function (dataUrl) {
-// Print the data URL of the picture in the Console
-console.log(dataUrl);
-
-// You can for example to test, add the image at the end of the document
-var img = new Image();
-img.src = dataUrl;
-document.body.appendChild(img);
-}).catch(function (error) {
-console.error('oops, something went wrong!', error);
-});
 
 
 

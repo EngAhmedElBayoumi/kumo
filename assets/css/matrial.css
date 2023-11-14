@@ -21,13 +21,13 @@
     text-align: center;
 }
 .tableMatrial table .thead-dark{
-    background: #068b8e;
+    background: #eac97a;
     color: #fff;
     font-weight: 400;
 }
 .table .thead-dark th{
-        background-color: #068b8e;
-    border-color: #068b8e;
+        background-color: #eac97a;
+    border-color: #eac97a;
     text-align: center;
 }
 .tableMatrial table p{

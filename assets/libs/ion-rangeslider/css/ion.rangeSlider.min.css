@@ -501,7 +501,7 @@
 .irs--sharp .irs-line {
     top: 30px;
     height: 2px;
-    background-color: #068b8e;
+    background-color: #eac97a;
     border-radius: 2px
 }
 
@@ -541,12 +541,12 @@
 
 .irs--sharp .irs-handle.state_hover,
 .irs--sharp .irs-handle:hover {
-    background-color: #068b8e
+    background-color: #eac97a
 }
 
 .irs--sharp .irs-handle.state_hover>i:first-child,
 .irs--sharp .irs-handle:hover>i:first-child {
-    border-top-color: #068b8e
+    border-top-color: #eac97a
 }
 
 .irs--sharp .irs-min,
@@ -717,7 +717,7 @@
 .irs--square .irs-bar {
     top: 31px;
     height: 4px;
-    background-color: #068b8e
+    background-color: #eac97a
 }
 
 .irs--square .irs-shadow {
@@ -730,7 +730,7 @@
     top: 25px;
     width: 16px;
     height: 16px;
-    border: 3px solid #068b8e;
+    border: 3px solid #eac97a;
     background-color: white;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -760,7 +760,7 @@
     line-height: 1;
     text-shadow: none;
     padding: 3px 5px;
-    background-color: #068b8e;
+    background-color: #eac97a;
     color: white
 }
 
