@@ -3199,6 +3199,9 @@ ul.dahs_navbar li a.active {
     margin-bottom: 30px;
 	background:transparent;
 }
+.product_grid .badge {
+    display: none;
+}
 .product_grid .card-footer{
 	background:#111 !important;
 }

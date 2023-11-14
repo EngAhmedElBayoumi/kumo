@@ -68,7 +68,7 @@ transition: all .3s ease-in-out;}
   .calendar td {
     padding: 0.8em 0.1em;
     color: #fff;
-    font-weight: 400 !important
+    font-weight: 300 !important
 }
   .calendar .day {
     position: relative;

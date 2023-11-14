@@ -4,11 +4,11 @@
     height: 40px;
     line-height: 38px;
     padding: 0;
-    border: 1px solid #edb003;
+    border: 0px solid #0000;
     color: #fff;
     font-size: 15px;
     border-radius: 0px;
-    background: #edb003;
+    background: linear-gradient(45deg, rgba(115,69,18,1) 0%, rgba(234,201,122,1) 100%);
     margin: 15px auto;
     text-transform: uppercase;
 }
