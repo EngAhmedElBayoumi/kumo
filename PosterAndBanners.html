@@ -458,14 +458,13 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Size</label>
-                                                <select class="form-control" required>
+                                                <select id="imageSize" class="form-control" onchange="changeImageSize()" required>
                                                     <option value="">Select Size</option>
-                                                    <option> 16In X 20In</option>
-                                                    <option> 18In X 24In</option>
-                                                    <option> 22In X 28In</option>
-                                                    <option> 24In X 36In</option>
-                                                    <option> 36In X 48In</option>
-                                                    
+                                                    <option value="16x20">16In X 20In</option>
+                                                    <option value="18x24">18In X 24In</option>
+                                                    <option value="22x28">22In X 28In</option>
+                                                    <option value="24x36">24In X 36In</option>
+                                                    <option value="36x48">36In X 48In</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -550,7 +549,7 @@
 						<div class="modal-body">
 						
 							<div class="customForm">
-                                <div class="imagePriview">
+                                <div class="imagePriview" id="imagePreviewBox">
                                     <img id="imagePreview" src="assets/img/newImages/new1/pants.png">
                                 </div>
                             
@@ -833,6 +832,38 @@ function previewImage(event) {
 
 // Event listener for file input change
 document.getElementById('uploadPoster').addEventListener('change', previewImage);
+        </script>
+        
+        <script>
+            function changeImageSize() {
+    var selectBox = document.getElementById("imageSize");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    var image = document.getElementById("imagePreviewBox");
+
+    // Define image sizes in inches and pixels (example values)
+    var imageSizeMap = {
+        "16x20": { width: 16, height: 20 },
+        "18x24": { width: 18, height: 24 },
+        "22x28": { width: 22, height: 28 },
+        "24x36": { width: 24, height: 36 },
+        "36x48": { width: 36, height: 48 }
+        // Add more sizes as needed
+    };
+
+    if (selectedValue in imageSizeMap) {
+        var newSize = imageSizeMap[selectedValue];
+        var containerWidth = 1000;
+        var newWidth = (newSize.width * 30) / containerWidth * 100; // Multiply width by 30
+        var newHeight = (newSize.height * 30) / containerWidth * 100; // Multiply height by 30
+
+        image.style.width = newWidth + "%";
+        image.style.height = newHeight + "%";
+        selectedSizeDiv.innerText = `Selected Size: ${selectedValue} - Width: ${newWidth}px, Height: ${newHeight}px`;
+    } else {
+        // Handle default case or error condition
+        console.log("Invalid size selection");
+    }
+}
         </script>
 		
 

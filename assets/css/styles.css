@@ -5638,9 +5638,14 @@ background: radial-gradient(circle, rgba(234,201,122,1) 0%, rgba(115,69,18,1) 10
     background: #111;
     color: #aaa;
 }
+.customModal .modal-body .customForm{
 
+}
 .customModal .modal-body .customForm .imagePriview{
-    
+        margin: 0px auto;
+    border: 1px solid #fff;
+    max-width: 100%;
+    overflow: auto;
 }
 .customModal .modal-body .customForm .imagePriview img{
     display: block;
