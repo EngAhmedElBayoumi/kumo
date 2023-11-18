@@ -5812,10 +5812,31 @@ background: radial-gradient(circle, rgba(234,201,122,1) 0%, rgba(115,69,18,1) 10
 }
 
 
+.ForwardReforwrd{
+        display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+}
 
-
-
-
+.ForwardReforwrd .btn-secondary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    border-radius: 0;
+    background: #0e0e0e;
+    color: #eee;
+    border: 1px solid #111;
+}
+.ForwardReforwrd .btn-secondary:nth-child(1){
+    margin-left: 0;
+}
+.ForwardReforwrd .btn-secondary:nth-child(2){
+    margin-right: 0;
+}
+.ForwardReforwrd .btn-secondary i{
+        margin: 0 10px;
+}
 
 
 
