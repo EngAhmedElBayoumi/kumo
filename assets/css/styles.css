@@ -5719,28 +5719,92 @@ background: radial-gradient(circle, rgba(234,201,122,1) 0%, rgba(115,69,18,1) 10
         color: #eac97a;
 }
 
+.Consultation{
+    padding-bottom: 50px;
+}
+.Consultation .sec_title{
+    
+}
+.Consultation .ConsultBox{
+        padding: 30px 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+        transition: all .4s ease-in-out;
+}
+.Consultation .ConsultBox *{
+    transition: all .4s ease-in-out;
+}
+.Consultation .ConsultBox .ConsutName{
+    
+}
+.Consultation .ConsultBox .ConsutName h1{
+    color: #eee;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid #343434;
+}
+
+
+.Consultation .ConsultBox .ConsultPrice{
+    
+}
+.Consultation .ConsultBox .ConsultPrice h2{
+
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid #343434;
+    color: #eac97a;
+}
+.Consultation .ConsultBox .ConsultPrice h2 span{
+    
+}
+
+.Consultation .ConsultBox .consultDescription{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #343434;
+        height: 180px;
+    overflow: hidden;
+}
+.Consultation .ConsultBox .consultDescription p{
+    
+}
+
+.Consultation .ConsultBox .ConsultBuy{
+        display: block;
+    margin-top: 25px;
+}
+.Consultation .ConsultBox .ConsultBuy a{
+        display: block;
+    height: 45px;
+    background: #0e0e0e;
+    width: max-content;
+    padding: 0 25px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    border: 1px solid #0e0e0e;
+    margin: auto;
+    color: #fff;
+}
 
 
 
+.Consultation .ConsultBox:hover{
+        border: 1px solid #eac97a;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Consultation .ConsultBox:hover .ConsultBuy a{
+        border: 1px solid #eac97a;
+}
+.Consultation .ConsultBox .ConsultBuy a:hover{
+        border: 1px solid #eac97a;
+        background: #eac97a;
+     color: #212121;
+}
 
 
 
