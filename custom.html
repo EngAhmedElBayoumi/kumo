@@ -1339,19 +1339,19 @@
                                     <div class="AcordyBodyInputs">
                                         <div class="form-group">
                                             <div class="flex-1">
-											<input id="dd" class="checkbox-custom" name="dd" type="checkbox">
-											<label for="dd" class="checkbox-custom-label">Remember Me <a class="text-dark" href="privacy.html">Privcy Police</a></label>
-										</div>
+                                                <input id="dd" onchange="showUpload()" class="checkbox-custom" name="dd" type="checkbox">
+                                                <label for="dd" class="checkbox-custom-label">Remember Me <a class="text-dark" href="privacy.html">Privcy Police</a></label>
+                                            </div>
                                         </div>
-                                      <div class="form_group">
-                                        <label>Upload Image</label>
-                                        <input
-                                          type="file"
-                                          id="tshirt-custompicture"
-                                          class="form-control"
-                                          placeholder="upload image"
-                                        />
-                                      </div>
+                                        <div class="form_group" id="uploadSection" style="display: none;">
+                                            <label>Upload Image</label>
+                                            <input
+                                              type="file"
+                                              id="tshirt-custompicture"
+                                              class="form-control"
+                                              placeholder="upload image"
+                                            />
+                                        </div>
                                     </div>
                                   </div>
                                 </div>
@@ -3776,6 +3776,19 @@ canvas.addEventListener("mouseup", () => {
       </script>
       
  
+      
+      <script>
+        function showUpload() {
+    var checkbox = document.getElementById('dd');
+    var uploadSection = document.getElementById('uploadSection');
+
+    if (checkbox.checked) {
+        uploadSection.style.display = 'block';
+    } else {
+        uploadSection.style.display = 'none';
+    }
+}
+      </script>
       
   </body>
 

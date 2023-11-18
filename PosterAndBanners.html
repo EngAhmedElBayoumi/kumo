@@ -490,7 +490,7 @@
                                         <div class="col-lg-12">
                                             <div class="form-group">
                                                 <label>Upload Poster Or Banner</label>
-                                                <input type="file" class="form-control" required>
+                                                <input id="uploadPoster" type="file" class="form-control" required>
                                             </div>
                                         </div>
                                         
@@ -551,7 +551,7 @@
 						
 							<div class="customForm">
                                 <div class="imagePriview">
-                                    <img src="assets/img/newImages/new1/pants.png">
+                                    <img id="imagePreview" src="assets/img/newImages/new1/pants.png">
                                 </div>
                             
                             </div>
@@ -809,6 +809,31 @@
 			}
 		</script>
 
+        
+        <script>
+            // Function to handle file input change
+function previewImage(event) {
+    var input = event.target;
+    var preview = document.getElementById('imagePreview');
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            preview.style.display = 'block';
+            preview.src = e.target.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        preview.style.display = 'none';
+        preview.src = '#';
+    }
+}
+
+// Event listener for file input change
+document.getElementById('uploadPoster').addEventListener('change', previewImage);
+        </script>
 		
 
 	</body>
