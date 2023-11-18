@@ -3740,6 +3740,43 @@
   });
 
       </script>
+      
+      <script>
+          
+
+const canvas = document.getElementById("tshirt-div");
+const ctx = canvas.getContext("2d");
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+canvas.addEventListener("mousedown", (e) => {
+    alert('mousedown');
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
+
+canvas.addEventListener("mousemove", (e) => {
+     alert('mousemove');
+  if (isDrawing) {
+    const [currentX, currentY] = [e.offsetX, e.offsetY];
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(currentX, currentY);
+    ctx.stroke();
+    [lastX, lastY] = [currentX, currentY];
+  }
+});
+
+canvas.addEventListener("mouseup", () => {
+    alert('mouseup');
+  isDrawing = false;
+});
+
+      </script>
+      
+ 
+      
   </body>
 
   <!-- Mirrored from themezhub.net/kumo-demo-2/kumo/shop-single-v4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Oct 2023 17:06:12 GMT -->
